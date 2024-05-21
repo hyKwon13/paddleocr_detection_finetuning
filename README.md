@@ -1,4 +1,4 @@
-# 프로젝트-개요
+# 프로젝트 개요
 한국어로 된 paddleocr detection model finetuning 문서가 부족하여 본 프로젝트를 진행하게 되었습니다. Text Deteciton, Text Recogntion 모델을 사용자에 맞게 전이학습하여 목적에 맞게 사용할 필요가 있습니다.
 
 ## 목차
