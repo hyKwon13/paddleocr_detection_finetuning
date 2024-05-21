@@ -4,13 +4,13 @@
 ## 목차
 
 - [프로젝트 개요](#프로젝트-개요)
-- [1. 설치 지침](#설치 지침)
-- [아키텍처](#아키텍처)
-- [사용법](#사용법)
-- [라우트](#라우트)
-- [종속성](#종속성)
+- [1.설치-지침](#1.설치-지침)
+- [2.데이터-주석](#2.데이터-주석)
+- [3.구성-파일-예시](#3.구성-파일-예시)
+- [4.모델-학습](#4.모델-학습)
+- [5.모델-내보내기](#5.모델-내보내기)
 
-## 설치 지침
+## 1.설치-지침
 
 ### 환경 요구 사항
 - PaddlePaddle >= 2.1.0
@@ -30,10 +30,10 @@
 %cd PaddleOCR/
 ```
 
-## 2. 데이터 주석
+## 2.데이터-주석
 paddleocr 설치 후 명렁프롬프트에서 ppocrlabel 입력하여 라벨링을 진행합니다.
 
-## 3. 구성 파일 예시
+## 3.구성-파일-예시
 이 프로젝트는 configs/det/ch_PP-OCRv2/ch_PP-OCRv2_det_student.yml구성 파일을 사용합니다. 파일의 변경된 지점은 다음과 같습니다.
 
 ```yaml
@@ -205,12 +205,12 @@ Eval:
 profiler_options: null
 ```
 
-## 4. 모델 학습
+## 4.모델-학습
 ```sh
 !python tools/train.py -c configs/det/ch_PP-OCRv2/ch_PP-OCRv2_det_student.yml
 ```
 
-## 5. 모델 내보내기
+## 5.모델-내보내기
 ```sh
 !python tools/export_model.py -c configs/det/ch_PP-OCRv2/ch_PP-OCRv2_det_student.yml -o Global.pretrained_model=./my_exps/det_dianbiao_size1600_copypaste/best_accuracy Global.save_inference_dir=./inference/det_db
 ```
