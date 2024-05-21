@@ -4,11 +4,11 @@
 ## 목차
 
 - [프로젝트 개요](#프로젝트-개요)
-- [1.설치-지침](#1.설치-지침)
-- [2.데이터-주석](#2.데이터-주석)
-- [3.구성-파일-예시](#3.구성-파일-예시)
-- [4.모델-학습](#4.모델-학습)
-- [5.모델-내보내기](#5.모델-내보내기)
+- [1.설치 지침](#1.설치-지침)
+- [2.데이터 주석](#2.데이터-주석)
+- [3.구성 파일 예시](#3.구성-파일-예시)
+- [4.모델 학습](#4.모델-학습)
+- [5.모델 내보내기](#5.모델-내보내기)
 
 ## 1.설치-지침
 
@@ -214,5 +214,3 @@ profiler_options: null
 ```sh
 !python tools/export_model.py -c configs/det/ch_PP-OCRv2/ch_PP-OCRv2_det_student.yml -o Global.pretrained_model=./my_exps/det_dianbiao_size1600_copypaste/best_accuracy Global.save_inference_dir=./inference/det_db
 ```
-
-## 6. 결론
