@@ -214,3 +214,6 @@ profiler_options: null
 ```sh
 !python tools/export_model.py -c configs/det/ch_PP-OCRv2/ch_PP-OCRv2_det_student.yml -o Global.pretrained_model=./my_exps/det_dianbiao_size1600_copypaste/best_accuracy Global.save_inference_dir=./inference/det_db
 ```
+
+참고 출처
+https://aistudio.baidu.com/projectdetail/3429765
